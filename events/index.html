@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./event.css" />
+  <title>Events</title>
+</head>
+
+<body>
+  <div class="event-container">
+    <div class="event-text">
+      <div class="event-heading">
+        <h1>
+          Bringing the <span>power</span> of <span>yoga</span> near you.
+        </h1>
+      </div>
+      <div class="event-elements">
+        <div class="event-item">
+          <img src="./images-new-design/Icon User.png" alt="" />
+          <p>
+            xx users mentored (kind of like these many people have attended
+            the sessions)
+          </p>
+        </div>
+        <div class="event-item">
+          <img src="./images-new-design/Icon events.png" alt="" />
+          <p>Succesful events conducted in a lot of places like ryan</p>
+        </div>
+        <div class="event-item">
+          <img src="./images-new-design/Update.png" alt="" />
+          <p>Upcoming events (probably)</p>
+        </div>
+      </div>
+    </div>
+    <div class=" swiper-container mySwiper event-slider ">
+      <div  class="swiper-wrapper event-slider-container ">
+        <div class="swiper-slide event-slider-card   ">
+          <div class="event-img">
+            <img src="./images-new-design/workshop-pic.png" alt="" />
+          </div>
+          <h3 class="event-name">Yoga workshop</h3>
+          <div class="event-location">
+            <img src="./images-new-design/location.svg" alt="" />
+            <p>Ryan school</p>
+          </div>
+        </div>
+        <div class="swiper-slide event-slider-card   ">
+          <div class="event-img">
+            <img src="./images-new-design/workshop-pic.png" alt="" />
+          </div>
+          <h3 class="event-name">POGO workshop</h3>
+          <div class="event-location">
+            <img src="./images-new-design/location.svg" alt="" />
+            <p>Ryan school</p>
+          </div>
+        </div>
+        <div class="swiper-slide event-slider-card  ">
+          <div class="event-img">
+            <img src="./images-new-design/workshop-pic.png" alt="" />
+          </div>
+          <h3 class="event-name">CARTOOn workshop</h3>
+          <div class="event-location">
+            <img src="./images-new-design/location.svg" alt="" />
+            <p>Ryan school</p>
+          </div>
+        </div>
+        <div class="swiper-slide event-slider-card  ">
+          <div class="event-img">
+            <img src="./images-new-design/workshop-pic.png" alt="" />
+          </div>
+          <h3 class="event-name">CARTOOn workshop</h3>
+          <div class="event-location">
+            <img src="./images-new-design/location.svg" alt="" />
+            <p>Ryan school</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+        <button id="prev"><img src="./images-new-design/circle_chevron_left.svg" alt=""></button>
+        <button id="next"><img src="./images-new-design/circle_chevron_right.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        navigation: {
+          nextEl: "#next",
+          prevEl: "#prev"
+        }
+      });
+    </script>
+     <script type="text/javascript" src="./event.js"></script>
+</body>
+
+</html>
