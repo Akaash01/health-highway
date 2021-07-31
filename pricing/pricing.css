@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.price-heading {
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+.price-heading h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 5px 0px;
+}
+.price-heading p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #606060;
+}
+.price-benifits {
+  width: 413px;
+  height: 566px;
+  background: #f6fbff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.price-benifits h3 {
+  color: #fff;
+  background: #4ca9ee;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  margin: 1.5rem 0rem;
+}
+.benifit-items-container {
+  width: 70%;
+  padding: 1.5rem 0rem;
+  list-style: none;
+}
+.benifit-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0rem;
+}
+.benifit-item h4 {
+  max-width: 182px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #323232;
+}
+.session-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid #606060;
+  border-radius: 10px;
+  margin: 1rem 0rem;
+  width: 454px;
+  height: 124px;
+}
+.session-item input {
+  padding: 20px;
+}
+
+.p-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.p-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 24px;
+  border-radius: 50%;
+  border: 2px solid #9f9f9f;
+}
+.checkmark img {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.p-label input:checked ~ .checkmark img {
+  display: block;
+}
+.p-label input:checked ~ .checkmark {
+  border: none;
+  background-color: #fff;
+}
+.session-item ~ .p-label input:checked {
+  background-color: #606060;
+}
+.session-save h3 {
+  font-size: 20px;
+  color: #606060;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.session-save h2 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  background: #4ca9ee;
+  padding-top: 2px;
+  width: 100px;
+  height: 27px;
+  text-align: center;
+  border-radius: 20px;
+}
+.session-save {
+  padding: 0rem 1rem;
+  width: 250px;
+}
+.session-price h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #606060;
+}
+.session-price span {
+  font-size: 32px;
+  color: black;
+}
+.session-item-active {
+  background: #4ca9ee;
+  color: #fff;
+  filter: drop-shadow(-5px 5px 4px rgba(76, 169, 238, 0.25));
+  border: none;
+}
+.session-item-active .session-save h3,
+.session-item-active .session-price h3,
+.session-item-active .session-price span {
+  color: #fff;
+}
+.session-item-active .session-save h2 {
+  color: #4ca9ee;
+  background: #fff;
+}
+.pricing-main {
+  display: flex;
+  margin-top: 3rem;
+  padding: 0rem 2rem;
+}
+.session-container {
+  padding: 0rem 2rem;
+}
+.addtocart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: none;
+  background: #4ca9ee;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  width: 300px;
+  height: 60px;
+}
+.addtocart h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.addtocart img {
+  padding: 0px 5px;
+}
+@media (max-width: 1115px) {
+  .pricing-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .session-container {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 657px) {
+  .session-container {
+    padding: 0px;
+  }
+  .pricing-main {
+    padding: 0px;
+  }
+}
+@media (max-width: 542px) {
+  .session-save {
+    width: unset;
+  }
+  .session-item {
+    width: unset;
+  }
+  .price-benifits {
+    margin: 0px;
+    width: unset;
+    height: unset;
+  }
+  .price-heading h2 {
+    font-size: 1.5rem;
+  }
+  .benifit-item {
+    padding: 10px 0px;
+  }
+  .price-benifits h3 {
+    font-size: 1rem;
+  }
+  .benifit-items-container {
+    width: 90%;
+  }
+  .addtocart {
+    width: 200px;
+    height: 50px;
+  }
+  .addtocart h2 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 430px) {
+  .session-item {
+    padding: 5px;
+  }
+  .session-save {
+    padding: 0px 10px;
+  }
+  .session-save h3 {
+    font-size: 1.2rem;
+  }
+  .session-save h2 {
+    font-size: 14px;
+    width: 90px;
+    height: 20px;
+    padding: 0px 10px;
+  }
+  .session-price span {
+    font-size: 24px;
+  }
+  .session-price h3 {
+    font-size: 16pxpx;
+  }
+  .price-benifits {
+    padding: 5px;
+  }
+  .pricing-main {
+    margin-top: 1rem;
+  }
+  .price-heading h2 {
+    font-size: 1.2rem;
+  }
+  .price-heading h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 318px) {
+  .session-container {
+    width: 80vw;
+  }
+  .price-benifits {
+    width: 80vw;
+  }
+}
